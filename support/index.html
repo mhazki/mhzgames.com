@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#162234">
+<title>Support — MHz Games</title>
+<meta name="description" content="Support for MHz Games titles. Contact, purchase and restore help, saved progress, ads and privacy choices for Drift Versus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap">
+<style>
+/* Palette copied from the game shell (TRV Shell.uss), the front door and the
+   privacy site, so every surface the player can reach reads as one product.
+   Kept in sync by hand — there is no build step on this site. */
+:root {
+    --canvas:  #162234;
+    --card:    #0D151B;
+    --border:  #0B1119;
+    --accent-yellow: #ECAE2C;
+    --ink:      #f2ede4;
+    --ink-mute: #9aa0b0;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: "Barlow Semi Condensed", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 1rem;
+}
+.eyebrow {
+    margin: 0 0 0.25rem;
+    color: var(--ink-mute);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+.eyebrow a { color: var(--ink-mute); }
+h1 {
+    margin: 0;
+    font-style: italic;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.05;
+    color: var(--accent-yellow);
+}
+.tag { margin: 0.5rem 0 2.5rem; color: var(--ink-mute); font-style: italic; }
+h2 {
+    margin: 2.5rem 0 0.75rem;
+    font-size: 1.35rem;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--accent-yellow);
+}
+h3 {
+    margin: 1.75rem 0 0.35rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+p, ul { margin: 0.5rem 0; }
+ul { padding-left: 1.2rem; }
+li { margin: 0.3rem 0; }
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+}
+.card p:first-child { margin-top: 0; }
+.card p:last-child { margin-bottom: 0; }
+/* No `white-space: nowrap` here. The longest path on the page —
+   SETTINGS -> ABOUT & PRIVACY -> PRIVACY OPTIONS — is wider than a phone
+   viewport, and holding it on one line widened the whole document and
+   clipped every paragraph on the right. It wraps; the arrows still read. */
+.path {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--accent-yellow);
+}
+a { color: var(--accent-yellow); }
+hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0 0; }
+footer {
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 2rem;
+    color: var(--ink-mute);
+    font-size: 0.95rem;
+}
+footer p { margin: 0.2rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow"><a href="/">MHz Games</a></p>
+  <h1>Support</h1>
+  <p class="tag">Help for our games, and how to reach a human.</p>
+
+  <section class="card">
+    <p><strong>Email <a href="mailto:hello@mhzgames.com">hello@mhzgames.com</a></strong> and we will reply. One person reads it, so please allow a couple of days.</p>
+    <p>It saves a round trip if you include:</p>
+    <ul>
+      <li>which game, and which phone and OS version you are on</li>
+      <li>what you did, what you expected, and what happened instead</li>
+      <li>for anything about a purchase, the receipt email from Apple or Google</li>
+    </ul>
+  </section>
+
+  <h2>Drift Versus</h2>
+  <p>A single-thumb touge racer. Everything below is true of the shipping build.</p>
+
+  <h3>I bought Remove Ads and the ads came back</h3>
+  <p>Open the in-game <span class="path">STORE</span> and tap <span class="path">RESTORE PURCHASES</span>. Remove Ads is a one-time purchase tied to your Apple ID or Google account, so restoring it on the same account brings it back on any device, including after a reinstall.</p>
+  <p>If restore reports <em>nothing to restore</em> while you have the receipt, email us with that receipt.</p>
+
+  <h3>My Stacks are gone</h3>
+  <p>Stacks packs — Glovebox, Trunk, Garage Fund and Warehouse — are consumable purchases. They are delivered once into the save on the device that bought them, and by store policy on both Apple and Google they cannot be restored the way Remove Ads can. They are not recoverable after a reinstall or on a second device.</p>
+  <p>If a pack was charged and never delivered, that is a bug rather than policy. Email us with the receipt.</p>
+
+  <h3>My progress is gone / can I move it to a new phone?</h3>
+  <p>The game has no accounts and no servers of its own. Your cars, credits and course records live in a file in the game's private storage on your device, and nowhere else. We cannot see it, restore it or transfer it.</p>
+  <p>If your phone's own cloud backup includes app data, the save may travel with that backup. Uninstalling the game deletes it.</p>
+
+  <h3>A rewarded ad did not pay out</h3>
+  <p>Rewards are paid when the ad reports that it finished. An ad that is closed early, or one that fails to load on a weak connection, pays nothing — that is working as intended. If an ad played all the way through and no reward arrived, tell us what you were claiming and roughly when.</p>
+
+  <h3>I want to change my choice about ads</h3>
+  <p>In the European Economic Area, the UK and Switzerland the game asks about ads on first run. To change that answer later, go to <span class="path">SETTINGS → ABOUT &amp; PRIVACY → PRIVACY OPTIONS</span>.</p>
+  <p>Outside those regions that panel is not shown, because no consent choice is being recorded there. Ads on iOS are non-personalised regardless: the game does not ask for permission to track you.</p>
+
+  <h3>Refunds</h3>
+  <p>We do not take your payment and cannot issue a refund. Purchases go through Apple or Google, and refunds are theirs to grant:</p>
+  <ul>
+    <li>iOS — <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a></li>
+    <li>Android — <a href="https://support.google.com/googleplay/answer/2479637">Google Play refund request</a></li>
+  </ul>
+  <p>If a refund is being declined over something that is our fault, tell us and we will say so to them in writing.</p>
+
+  <h3>Privacy, and what the game sends</h3>
+  <p>The full policy is at <a href="https://privacy.mhzgames.com/driftversus/">privacy.mhzgames.com/driftversus</a>. In short: no accounts, no login, no personal data, anonymous usage events under a random install ID, and none of that sent at all in the EEA, the UK or Switzerland.</p>
+  <p>The game is not directed to children under 13.</p>
+
+  <h3>Reporting a bug</h3>
+  <p>The most useful bug report names the course and the mode, says whether it happens every time, and includes a screen recording if you can take one. Crashes on a particular phone are worth reporting even without steps — the model and OS version alone often identify the cause.</p>
+
+  <hr>
+</main>
+
+<footer>
+  <p>MHz Games — Muhammad Hazki Hariowibowo</p>
+  <p><a href="mailto:hello@mhzgames.com">hello@mhzgames.com</a> · <a href="/">mhzgames.com</a> · <a href="https://privacy.mhzgames.com/">Privacy policies</a></p>
+</footer>
+</body>
+</html>
