@@ -13,11 +13,11 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MHz Games">
 <meta property="og:title" content="Drift Versus: Touge Racing">
-<meta property="og:description" content="One thumb. One mountain road. One rival ahead. Catch them before the finish.">
+<meta property="og:description" content="High-speed touge racing on your phone with simple touch controls. Tap to steer, hold to drift, and catch the rival ahead.">
 <meta property="og:url" content="https://mhzgames.com/driftversus/">
 <meta property="og:image" content="https://mhzgames.com/driftversus/img/banner.jpg">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="500">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="583">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
@@ -27,7 +27,7 @@
   "name": "Drift Versus: Touge Racing",
   "url": "https://mhzgames.com/driftversus/",
   "image": "https://mhzgames.com/driftversus/img/icon-512.png",
-  "description": "A one-thumb touge racer. Chase a rival down a one-lane mountain pass and catch them before the finish.",
+  "description": "High-speed touge racing on your phone with simple touch controls. Chase a rival down a narrow mountain pass and catch them before the finish.",
   "genre": "Racing",
   "gamePlatform": "Android",
   "operatingSystem": "Android 8.0+",
@@ -83,7 +83,7 @@ a { color: var(--accent-yellow); }
 /* ---- hero */
 .banner {
     width: 100%;
-    aspect-ratio: 1024 / 500;
+    aspect-ratio: 2000 / 972;
     object-fit: cover;
     border: 1px solid var(--border);
 }
@@ -133,10 +133,11 @@ a { color: var(--accent-yellow); }
     text-decoration: none;
     border: 2px solid var(--accent-yellow);
 }
-.btn-play { background: var(--accent-yellow); color: #16110a; }
-.btn-play:hover { filter: brightness(1.08); }
-.btn-play svg { width: 1.1rem; height: 1.1rem; }
-.btn-soon { color: var(--ink-mute); border-color: #3a4456; cursor: default; }
+/* Google's badge, used as supplied: the clear-space padding is trimmed, the
+   artwork is not. Their guidelines ask that it never be recoloured, restyled
+   or drawn smaller than the other store badges beside it. */
+.play-badge img { height: 3.5rem; width: auto; }
+.btn-soon { color: var(--ink-mute); border-color: #3a4456; cursor: default; min-height: 3.5rem; }
 .facts {
     display: flex;
     flex-wrap: wrap;
@@ -239,8 +240,8 @@ footer p { margin: 0.2rem 0; }
   <p class="eyebrow"><a href="/">MHz Games</a></p>
 
   <header>
-    <img class="banner" src="img/banner.webp" width="1024" height="500"
-         alt="A white drift car sliding down a mountain road at dusk, with the Drift Versus logo">
+    <img class="banner" src="img/banner.webp" width="1600" height="778"
+         alt="A yellow and a red car drifting side by side through a mountain corner, with the Drift Versus logo">
     <div class="title-row">
       <img class="app-icon" src="img/icon-512.png" width="512" height="512" alt="Drift Versus app icon">
       <div>
@@ -249,12 +250,11 @@ footer p { margin: 0.2rem 0; }
       </div>
     </div>
 
-    <p class="pitch">One thumb. One mountain road. One rival ahead. Catch them before the finish.</p>
+    <p class="pitch">High-speed touge racing on your phone with simple touch controls. Controls take seconds to learn, but mastering the mountain is another story.</p>
 
     <div class="cta">
-      <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=id.mhz.driftversus">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5z"/></svg>
-        Get it on Google Play
+      <a class="play-badge" href="https://play.google.com/store/apps/details?id=id.mhz.driftversus">
+        <img src="img/google-play-badge.png" width="564" height="168" alt="Get it on Google Play">
       </a>
       <span class="btn btn-soon">iOS · coming soon</span>
     </div>
@@ -279,39 +279,39 @@ footer p { margin: 0.2rem 0; }
 
     <h2>How it plays</h2>
     <div class="controls">
-      <div class="step"><b>Tap</b><p>The car drives itself. Tap the left or right side of the screen to swerve.</p></div>
-      <div class="step"><b>Hold</b><p>Hold a side and the car drifts. Switch sides mid-slide to swing it the other way.</p></div>
+      <div class="step"><b>Tap</b><p>Tap the left or right side of the screen to steer.</p></div>
+      <div class="step"><b>Hold</b><p>Hold to drift. Sliding is the only way to carry your speed through sharp hairpins.</p></div>
       <div class="step"><b>Brake</b><p>Press the brake button in the middle to slow down. Brake mid-drift and the turn tightens.</p></div>
     </div>
 
     <h2>The game</h2>
     <div class="features">
       <section class="feature">
-        <h3>The chase is everything</h3>
-        <p>Every race is a single run down a narrow mountain pass. It's just you and the rival ahead. Catch them before the finish line, and the road is yours.</p>
+        <h3>The Chase is Everything</h3>
+        <p>Every race is a high-stakes, single run down a narrow mountain pass. It’s just you and the rival ahead. Catch them before the finish line, and the road is yours.</p>
       </section>
       <section class="feature">
-        <h3>Drift to survive</h3>
-        <p>Drifting isn't just for style. It's the only way to carry your speed through sharp hairpins. Nail the angle and you'll come out of the corner faster than you would by gripping around it.</p>
+        <h3>Drift to Survive</h3>
+        <p>Sliding isn’t just a trick you do for style, drifting is the only way to carry your speed through sharp hairpins. Nail the angle and you’ll rocket out of the corner faster than you entered.</p>
       </section>
       <section class="feature">
-        <h3>Rise through the Legends</h3>
-        <p>Take on the Legends of the mountain. Work your way up, beat each Legend, and build a garage of 23 unique cars, every one of them unlockable through gameplay.</p>
+        <h3>Rise Through the Legends</h3>
+        <p>Take on the legends of the mountain. Work your way up, defeat each legend, and build up your garage with 23 unique cars, all of which can be unlocked entirely through gameplay.</p>
       </section>
       <section class="feature">
-        <h3>Play offline</h3>
-        <p>No logins and no internet connection required. Your save lives on your device, so you can play completely offline.</p>
+        <h3>Play Offline</h3>
+        <p>There are no logins and no mandatory internet connection. Your save lives on your device, so you can play completely offline.</p>
       </section>
       <section class="feature">
-        <h3>No paywalls</h3>
-        <p>Free to play, and everything can be earned just by driving. An optional ad-free upgrade and car token packs are available, but nothing is locked behind a paywall.</p>
+        <h3>No Paywalls</h3>
+        <p>The game is free to play, everything can be earned just by driving. While there is an optional ad-free upgrade and currency packs available, absolutely nothing is locked behind a paywall.</p>
       </section>
     </div>
   </main>
 
   <footer>
     <p><a href="/support/">Support</a> · <a href="https://privacy.mhzgames.com/driftversus/">Privacy policy</a> · <a href="mailto:hello@mhzgames.com">hello@mhzgames.com</a></p>
-    <p>© 2026 MHz Games</p>
+    <p>© 2026 MHz Games. Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </footer>
 </div>
 </body>
