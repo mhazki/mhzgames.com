@@ -12,3 +12,8 @@ listing (App Store Connect makes it mandatory). It is publisher-level with a
 per-game section, so a second game adds a heading rather than a second page.
 Apple checks the URL resolves and is about the app — a 404 or a bare mailto is
 a metadata rejection.
+
+`driftversus/` is the game's page: banner, icon, screenshots and the store
+copy, with its images in `driftversus/img/` (web-sized exports of the Play
+Store assets). Its copy follows `STORE_LISTING.md` in the TRV repo, so update
+both together, and never claim something the shipped build does not do.

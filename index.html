@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#162234">
 <title>MHz Games</title>
-<meta name="description" content="MHz Games — an independent mobile game studio. Drift Versus, a single-thumb touge racer, is coming soon.">
+<meta name="description" content="MHz Games — an independent mobile game studio. Drift Versus, a one-thumb touge racer, is out now on Android.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap">
@@ -74,6 +74,20 @@ main {
     letter-spacing: 0.03em;
 }
 .card p { margin: 0.25rem 0 0; }
+.game {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+.game:hover { border-color: var(--accent-yellow); }
+.game img {
+    width: 5.5rem;
+    height: 5.5rem;
+    flex: none;
+    border-radius: 22%;
+}
 .soon {
     display: inline-block;
     margin-top: 0.75rem;
@@ -103,11 +117,14 @@ footer p { margin: 0.2rem 0; }
   <h1 class="wordmark">MHz Games</h1>
   <p class="tag">An independent mobile game studio.</p>
 
-  <section class="card">
-    <h2>Drift Versus</h2>
-    <p>A single-thumb touge racer. One finger, one mountain road, one rival.</p>
-    <span class="soon">Coming soon to iOS &amp; Android</span>
-  </section>
+  <a class="card game" href="/driftversus/">
+    <img src="/driftversus/img/icon-180.png" width="180" height="180" alt="">
+    <div>
+      <h2>Drift Versus</h2>
+      <p>A one-thumb touge racer. One mountain road, one rival ahead.</p>
+      <span class="soon">Out now on Android · iOS coming soon</span>
+    </div>
+  </a>
 </main>
 
 <footer>
