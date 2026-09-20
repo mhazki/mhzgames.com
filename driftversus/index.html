@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#162234">
+<meta name="theme-color" content="#13151B">
 <title>Drift Versus: Touge Racing — MHz Games</title>
 <meta name="description" content="High-speed touge racing with simple touch controls. Chase a rival down a narrow mountain pass, drift to carry your speed, and beat the Legends. Free on Android.">
 <link rel="canonical" href="https://mhzgames.com/driftversus/">
@@ -39,136 +39,213 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap">
+<link rel="preload" href="/fonts/GeistPixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="/">MHz</a>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="/">Home<sup>00</sup></a></li>
+      <li><a class="nav-link" href="/driftversus/" aria-current="page">Games<sup>01</sup></a></li>
+      <li><a class="nav-link" href="/support/">Support<sup>02</sup></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="shell">
+  <div class="column">
+
+    <header class="section inset">
+      <p class="eyebrow">[01] Games</p>
+
+      <img class="banner" src="img/banner.webp" width="1600" height="778"
+           alt="Two cars drifting side by side through a mountain corner, with the Drift Versus logo">
+
+      <div class="title-row">
+        <img class="app-icon" src="img/icon-512.png" width="512" height="512" alt="Drift Versus app icon">
+        <div>
+          <h1>Drift Versus</h1>
+          <p class="by">Touge Racing · MHz Games</p>
+        </div>
+      </div>
+
+      <p class="pitch">High-speed touge racing on your phone with simple touch controls. Controls take seconds to learn, but mastering the mountain is another story.</p>
+
+      <div class="cta">
+        <a class="play-badge" href="https://play.google.com/store/apps/details?id=id.mhz.driftversus">
+          <img src="img/google-play-badge.png" width="564" height="168" alt="Get it on Google Play">
+        </a>
+        <span class="btn" aria-disabled="true">iOS · coming soon</span>
+      </div>
+
+      <ul class="tags">
+        <li class="tag">Free to play</li>
+        <li class="tag">Android 8.0+</li>
+        <li class="tag">Plays offline</li>
+        <li class="tag">No account needed</li>
+      </ul>
+    </header>
+
+    <section class="section inset">
+      <p class="eyebrow">[02] Screenshots</p>
+      <h2>In motion</h2>
+      <!-- The strip scrolls, not the document: a phone never gets a
+           sideways-scrolling page. -->
+      <div class="shots" role="list">
+        <img role="listitem" src="img/shot-race.webp" width="720" height="1280" loading="lazy" alt="Drifting a yellow car past a rival on a mountain corner, drift score +320">
+        <img role="listitem" src="img/shot-mountain.webp" width="720" height="1280" loading="lazy" alt="Two cars chasing down a winding mountain road at night">
+        <img role="listitem" src="img/shot-legends.webp" width="720" height="1280" loading="lazy" alt="The career ladder with rival portraits and a Legend at stage 21">
+        <img role="listitem" src="img/shot-garage.webp" width="720" height="1280" loading="lazy" alt="The garage showing the orange Raito Apex-14V">
+        <img role="listitem" src="img/shot-home.webp" width="720" height="1280" loading="lazy" alt="The home screen with the Drift Versus logo and a yellow car">
+      </div>
+    </section>
+
+    <section class="section inset">
+      <p class="eyebrow">[03] Controls</p>
+      <h2>How it plays</h2>
+      <div class="grid steps">
+        <div class="card step">
+          <b>Tap</b>
+          <p>Tap the left or right side of the screen to steer.</p>
+        </div>
+        <div class="card step">
+          <b>Hold</b>
+          <p>Hold to drift. Sliding is the only way to carry your speed through sharp hairpins.</p>
+        </div>
+        <div class="card step">
+          <b>Brake</b>
+          <p>Press the brake button in the middle to slow down. Brake mid-drift and the turn tightens.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section inset">
+      <p class="eyebrow">[04] Features</p>
+      <h2>The game</h2>
+      <div class="grid features">
+        <section class="card feature">
+          <h3>The Chase is Everything</h3>
+          <p>Every race is a high-stakes, single run down a narrow mountain pass. It’s just you and the rival ahead. Catch them before the finish line, and the road is yours.</p>
+        </section>
+        <section class="card feature">
+          <h3>Drift to Survive</h3>
+          <p>Sliding isn’t just a trick you do for style, drifting is the only way to carry your speed through sharp hairpins. Nail the angle and you’ll rocket out of the corner faster than you entered.</p>
+        </section>
+        <section class="card feature">
+          <h3>Rise Through the Legends</h3>
+          <p>Take on the legends of the mountain. Work your way up, defeat each legend, and build up your garage with 23 unique cars, all of which can be unlocked entirely through gameplay.</p>
+        </section>
+        <section class="card feature">
+          <h3>Play Offline</h3>
+          <p>There are no logins and no mandatory internet connection. Your save lives on your device, so you can play completely offline.</p>
+        </section>
+        <section class="card feature">
+          <h3>No Paywalls</h3>
+          <p>The game is free to play, everything can be earned just by driving. While there is an optional ad-free upgrade and currency packs available, absolutely nothing is locked behind a paywall.</p>
+        </section>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <h2 class="footer-wordmark">MHz</h2>
+          <p class="footer-tagline">Independent mobile games</p>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-col">
+            <a class="footer-link" href="/">Home</a>
+            <a class="footer-link" href="/driftversus/">Drift Versus</a>
+            <a class="footer-link" href="/support/">Support</a>
+          </div>
+          <div class="footer-col">
+            <a class="footer-link" href="mailto:hello@mhzgames.com">Email</a>
+            <a class="footer-link" href="https://privacy.mhzgames.com/driftversus/" target="_blank" rel="noopener noreferrer">Privacy</a>
+            <a class="footer-link" href="https://play.google.com/store/apps/details?id=id.mhz.driftversus" target="_blank" rel="noopener noreferrer">Google Play</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MHz Games</p>
+        <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 <style>
-/* Palette copied from the game shell (TRV Shell.uss), the front door and the
-   privacy site. Kept in sync by hand, since this site has no build step. The
-   purple is the new icon's gradient, used only on this game's page. */
-:root {
-    --canvas:  #162234;
-    --card:    #0D151B;
-    --border:  #0B1119;
-    --accent-yellow: #ECAE2C;
-    --accent-purple: #4A3597;
-    --ink:      #f2ede4;
-    --ink-mute: #9aa0b0;
-}
-*, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
-body {
-    margin: 0;
-    background: var(--canvas);
-    color: var(--ink);
-    font-family: "Barlow Semi Condensed", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.6;
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-}
-img { display: block; max-width: 100%; height: auto; }
-a { color: var(--accent-yellow); }
-.wrap { width: 100%; max-width: 64rem; margin: 0 auto; padding: 0 1rem; }
-
-.eyebrow {
-    margin: 0;
-    padding: 1.25rem 0 1rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-}
-.eyebrow a { color: var(--ink-mute); text-decoration: none; }
-.eyebrow a:hover { color: var(--ink); }
-
-/* ---- hero */
+/* Page-specific: the hero banner with the icon overlapping its lower edge. */
+/* The banner keeps its aspect ratio until the column gets wide, then the
+   cap takes over and the artwork crops rather than growing to ~630px tall
+   and swallowing the fold. */
 .banner {
     width: 100%;
     aspect-ratio: 2000 / 972;
+    max-height: 26rem;
     object-fit: cover;
     border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-top: 1.5rem;
 }
 .title-row {
     display: flex;
     gap: 1.25rem;
     align-items: center;
-    margin: -2.5rem 0 0 1.25rem;
     position: relative;
+    margin: -2.5rem 0 0 1.25rem;
 }
 .app-icon {
     width: 7rem;
     height: 7rem;
     flex: none;
     border-radius: 22%;
-    border: 3px solid var(--canvas);
+    border: 3px solid var(--background);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 .title-row h1 {
     margin: 2.5rem 0 0;
-    font-style: italic;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
     font-size: clamp(1.9rem, 7vw, 3rem);
-    line-height: 1.05;
-    color: var(--accent-yellow);
 }
-.title-row .by { margin: 0.15rem 0 0; color: var(--ink-mute); font-size: 1rem; }
+.title-row .by {
+    margin: 0.35rem 0 0;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: color-mix(in oklch, var(--foreground) 40%, transparent);
+}
 .pitch {
-    margin: 1.5rem 0 1.25rem;
-    font-size: clamp(1.2rem, 4vw, 1.5rem);
-    font-style: italic;
-    line-height: 1.35;
+    margin: 1.75rem 0 1.5rem;
+    font-size: clamp(1.15rem, 3.5vw, 1.4rem);
+    line-height: 1.4;
+    color: color-mix(in oklch, var(--foreground) 65%, transparent);
     max-width: 36rem;
 }
 .cta { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.7rem 1.3rem;
-    font-weight: 600;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    border: 2px solid var(--accent-yellow);
-}
-/* Google's badge, used as supplied: the clear-space padding is trimmed, the
-   artwork is not. Their guidelines ask that it never be recoloured, restyled
-   or drawn smaller than the other store badges beside it. */
-.play-badge img { height: 3.5rem; width: auto; }
-.btn-soon { color: var(--ink-mute); border-color: #3a4456; cursor: default; min-height: 3.5rem; }
-.facts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem 1.25rem;
-    margin: 1.25rem 0 0;
-    padding: 0;
-    list-style: none;
-    color: var(--ink-mute);
-    font-size: 0.95rem;
-}
+/* Google's badge is used as supplied: their guidelines ask that it is never
+   recoloured, restyled, or drawn smaller than other store badges beside it.
+   It stays full-colour even though the rest of the page is monochrome. */
+.play-badge img { height: 3.25rem; width: auto; }
+.cta .btn { min-height: 3.25rem; }
 
-/* ---- sections */
-h2 {
-    margin: 3.5rem 0 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    color: var(--accent-yellow);
-}
-
-/* Screenshots scroll inside their own strip. The strip, not the page,
-   overflows, so a phone never gets a sideways-scrolling document. */
+/* Screenshot strip. */
 .shots {
     display: flex;
     gap: 0.75rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    margin-top: 1.5rem;
     padding-bottom: 0.75rem;
-    scrollbar-color: #3a4456 transparent;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 .shots img {
     flex: none;
@@ -177,56 +254,28 @@ h2 {
     object-fit: cover;
     scroll-snap-align: start;
     border: 1px solid var(--border);
+    border-radius: calc(var(--radius) * 0.8);
 }
 
-.controls {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    gap: 0.75rem;
-}
-.step {
-    background: var(--card);
-    border: 1px solid var(--border);
-    padding: 1.1rem 1.25rem;
-}
+.grid { margin-top: 1.5rem; }
+
 .step b {
     display: block;
-    font-style: italic;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--accent-yellow);
+    letter-spacing: 0.12em;
+    color: color-mix(in oklch, var(--foreground) 55%, transparent);
+    margin-bottom: 0.5rem;
 }
-.step p { margin: 0.3rem 0 0; }
+.step p { color: color-mix(in oklch, var(--foreground) 50%, transparent); }
 
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: 0.75rem;
+.features { grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
+.feature h3 { font-size: 1.2rem; }
+.feature p {
+    margin: 0.6rem 0 0;
+    color: color-mix(in oklch, var(--foreground) 50%, transparent);
 }
-.feature {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--accent-purple);
-    padding: 1.1rem 1.25rem;
-}
-.feature h3 {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 600;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-}
-.feature p { margin: 0.35rem 0 0; color: #d6d1c8; }
-
-footer {
-    margin-top: 4rem;
-    padding: 1.5rem 0 2.5rem;
-    border-top: 1px solid var(--border);
-    color: var(--ink-mute);
-    font-size: 0.95rem;
-}
-footer p { margin: 0.2rem 0; }
 
 @media (max-width: 36rem) {
     .title-row { margin: -1.75rem 0 0 0.75rem; gap: 0.9rem; }
@@ -234,85 +283,6 @@ footer p { margin: 0.2rem 0; }
     .title-row h1 { margin-top: 1.9rem; }
 }
 </style>
-</head>
-<body>
-<div class="wrap">
-  <p class="eyebrow"><a href="/">MHz Games</a></p>
 
-  <header>
-    <img class="banner" src="img/banner.webp" width="1600" height="778"
-         alt="A yellow and a red car drifting side by side through a mountain corner, with the Drift Versus logo">
-    <div class="title-row">
-      <img class="app-icon" src="img/icon-512.png" width="512" height="512" alt="Drift Versus app icon">
-      <div>
-        <h1>Drift Versus</h1>
-        <p class="by">Touge Racing · MHz Games</p>
-      </div>
-    </div>
-
-    <p class="pitch">High-speed touge racing on your phone with simple touch controls. Controls take seconds to learn, but mastering the mountain is another story.</p>
-
-    <div class="cta">
-      <a class="play-badge" href="https://play.google.com/store/apps/details?id=id.mhz.driftversus">
-        <img src="img/google-play-badge.png" width="564" height="168" alt="Get it on Google Play">
-      </a>
-      <span class="btn btn-soon">iOS · coming soon</span>
-    </div>
-
-    <ul class="facts">
-      <li>Free to play</li>
-      <li>Android 8.0+</li>
-      <li>Plays offline</li>
-      <li>No account needed</li>
-    </ul>
-  </header>
-
-  <main>
-    <h2>Screenshots</h2>
-    <div class="shots" role="list">
-      <img role="listitem" src="img/shot-race.webp" width="720" height="1280" loading="lazy" alt="Drifting a yellow car past a rival on a mountain corner, drift score +320">
-      <img role="listitem" src="img/shot-mountain.webp" width="720" height="1280" loading="lazy" alt="Two cars chasing down a winding mountain road at night">
-      <img role="listitem" src="img/shot-legends.webp" width="720" height="1280" loading="lazy" alt="The career ladder with rival portraits and a Legend at stage 21">
-      <img role="listitem" src="img/shot-garage.webp" width="720" height="1280" loading="lazy" alt="The garage showing the orange Raito Apex-14V">
-      <img role="listitem" src="img/shot-home.webp" width="720" height="1280" loading="lazy" alt="The home screen with the Drift Versus logo and a yellow car">
-    </div>
-
-    <h2>How it plays</h2>
-    <div class="controls">
-      <div class="step"><b>Tap</b><p>Tap the left or right side of the screen to steer.</p></div>
-      <div class="step"><b>Hold</b><p>Hold to drift. Sliding is the only way to carry your speed through sharp hairpins.</p></div>
-      <div class="step"><b>Brake</b><p>Press the brake button in the middle to slow down. Brake mid-drift and the turn tightens.</p></div>
-    </div>
-
-    <h2>The game</h2>
-    <div class="features">
-      <section class="feature">
-        <h3>The Chase is Everything</h3>
-        <p>Every race is a high-stakes, single run down a narrow mountain pass. It’s just you and the rival ahead. Catch them before the finish line, and the road is yours.</p>
-      </section>
-      <section class="feature">
-        <h3>Drift to Survive</h3>
-        <p>Sliding isn’t just a trick you do for style, drifting is the only way to carry your speed through sharp hairpins. Nail the angle and you’ll rocket out of the corner faster than you entered.</p>
-      </section>
-      <section class="feature">
-        <h3>Rise Through the Legends</h3>
-        <p>Take on the legends of the mountain. Work your way up, defeat each legend, and build up your garage with 23 unique cars, all of which can be unlocked entirely through gameplay.</p>
-      </section>
-      <section class="feature">
-        <h3>Play Offline</h3>
-        <p>There are no logins and no mandatory internet connection. Your save lives on your device, so you can play completely offline.</p>
-      </section>
-      <section class="feature">
-        <h3>No Paywalls</h3>
-        <p>The game is free to play, everything can be earned just by driving. While there is an optional ad-free upgrade and currency packs available, absolutely nothing is locked behind a paywall.</p>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    <p><a href="/support/">Support</a> · <a href="https://privacy.mhzgames.com/driftversus/">Privacy policy</a> · <a href="mailto:hello@mhzgames.com">hello@mhzgames.com</a></p>
-    <p>© 2026 MHz Games. Google Play and the Google Play logo are trademarks of Google LLC.</p>
-  </footer>
-</div>
 </body>
 </html>
