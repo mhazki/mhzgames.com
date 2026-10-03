@@ -59,7 +59,7 @@
 <div class="shell">
   <div class="column">
 
-    <header class="section inset">
+    <header class="section inset hero">
       <p class="eyebrow">[01] Games</p>
 
       <img class="banner" src="img/banner.webp" width="1600" height="778"
@@ -79,7 +79,10 @@
         <a class="play-badge" href="https://play.google.com/store/apps/details?id=id.mhz.driftversus">
           <img src="img/google-play-badge.png" width="564" height="168" alt="Get it on Google Play">
         </a>
-        <span class="btn" aria-disabled="true">iOS · coming soon</span>
+        <span class="store-soon" aria-disabled="true">
+          <small>Coming soon to the</small>
+          <span>App Store</span>
+        </span>
       </div>
 
       <ul class="tags">
@@ -239,7 +242,29 @@
    recoloured, restyled, or drawn smaller than other store badges beside it.
    It stays full-colour even though the rest of the page is monochrome. */
 .play-badge img { height: 3.25rem; width: auto; }
-.cta .btn { min-height: 3.25rem; }
+
+/* The App Store slot, sized and shaped to sit beside the Play badge. iOS
+   isn't out, so it's a dimmed placeholder rather than Apple's badge. */
+.store-soon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 3.25rem;
+    padding: 0 1.25rem;
+    border: 1px solid color-mix(in oklch, var(--foreground) 25%, transparent);
+    border-radius: 0.5rem;
+    background: #000;
+    color: color-mix(in oklch, var(--foreground) 55%, transparent);
+    line-height: 1.1;
+    cursor: default;
+}
+.store-soon small {
+    font-family: var(--font-mono);
+    font-size: 0.625rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.store-soon span { font-size: 1.25rem; font-weight: 500; }
 
 /* Screenshot strip. */
 .shots {
@@ -281,10 +306,46 @@
     color: color-mix(in oklch, var(--foreground) 50%, transparent);
 }
 
+/* Phones: both store buttons have to land in the first screen, so the hero
+   is tightened and the buttons move up above the pitch, stacked full width.
+   The Play badge itself is never stretched; its link becomes a black bar the
+   width of the column with the badge centred, edge to edge with the bar's
+   own matching border, so it reads as one button. */
 @media (max-width: 36rem) {
+    .hero { display: flex; flex-direction: column; padding-top: 0.5rem; }
+    .hero .eyebrow { display: none; }
+    .banner { margin-top: 0; }
     .title-row { margin: -1.75rem 0 0 0.75rem; gap: 0.9rem; }
     .app-icon { width: 5.25rem; height: 5.25rem; }
     .title-row h1 { margin-top: 1.9rem; }
+    .title-row .by { font-size: 0.75rem; letter-spacing: 0.08em; }
+
+    .cta {
+        order: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.625rem;
+        margin-top: 1.25rem;
+    }
+    .play-badge {
+        display: flex;
+        justify-content: center;
+        background: #000;
+        border: 1px solid #a6a6a6;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+    /* Clip the badge's own hairline frame so the bar's border is the only
+       one; the badge's black field runs straight into the bar's. */
+    .play-badge img { height: calc(3.5rem - 2px); clip-path: inset(4px); }
+    .store-soon {
+        width: 100%;
+        height: 3.5rem;
+        align-items: center;
+        text-align: center;
+    }
+    .pitch { order: 2; margin: 1.5rem 0 0; font-size: 1.1rem; }
+    .tags { order: 3; }
 }
 </style>
 
