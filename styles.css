@@ -184,12 +184,17 @@ strong, b { font-weight: 600; }
     padding-inline: var(--inset);
 }
 
+/* The studio logo, white on transparent (`mhz-logo.svg`, the same file the
+   games' splash screens are cut from). Sized by height; the width follows
+   the logo's 1538:673 aspect. */
 .nav-mark {
-    font-family: var(--font-pixel);
-    font-size: 1.125rem;
-    text-decoration: none;
-    color: var(--foreground);
+    display: block;
+    flex: none;
     transition: opacity 200ms ease;
+}
+.nav-mark img {
+    height: 1.75rem;
+    width: auto;
 }
 .nav-mark:hover { opacity: 0.7; }
 
