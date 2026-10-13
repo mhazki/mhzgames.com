@@ -30,7 +30,8 @@ and leaving them out keeps the site at zero JavaScript.
 
 `support/index.html` is the **Support URL** both stores require on the app
 listing (App Store Connect makes it mandatory). It is publisher-level with a
-per-game section, so a second game adds a heading rather than a second page.
+per-game section, so a second game adds a heading rather than a second page (Highway Versus does
+not have its section yet).
 Apple checks the URL resolves and is about the app — a 404 or a bare mailto is
 a metadata rejection.
 
@@ -39,15 +40,14 @@ copy, with its images in `driftversus/img/` (web-sized exports of the Play
 Store assets). Its copy follows `STORE_LISTING.md` in the TRV repo, so update
 both together, and never claim something the shipped build does not do.
 
-`highwayversus/` holds only `img/` for now. The game is a **Play Console
-draft** (`id.mhz.highwayversus`, entered 2026-09-06), not a release, so the
-front door lists it under "Next up" as a non-clickable card with an
-"In development" pill — no store link, because there is no store page to
-link to. Its one line of copy is the approved short description from
-`STORE_LISTING.md` in the THS repo, where every claim is checked against the
-endless build. **When the listing goes live**, the card becomes a link, the
-pill changes, and this page gets a `/highwayversus/index.html` of its own —
-the icon, feature graphic and three screenshots are already in `THS/store/`.
+`highwayversus/` is the second game's page, built on the same template as
+`driftversus/`, with web-sized exports of `THS/store/` (icon, feature graphic,
+and Play screenshots 1–6) in `highwayversus/img/`. It went live on Google Play
+on 2026-10-13 (`id.mhz.highwayversus`, listed as *Highway Versus: Traffic
+Racing*), so the front door now lists it under "Out now". Its copy follows the
+live Play listing, which `STORE_LISTING.md` in the THS repo checks against the
+endless build. The unused `.game-wip` / `.status` styles in `index.html` stay
+for the next unreleased game.
 
 Per-game privacy policies live in the sibling `mhazki/privacy` repo at
 `privacy.mhzgames.com`; these pages only link to them.
