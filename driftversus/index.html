@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#13151B">
 <title>Drift Versus: Touge Racing — MHz Games</title>
-<meta name="description" content="Touge drift racing game for Android. Chase a rival down narrow Japanese mountain passes, drift through hairpins and beat the Legends. Simple touch controls, plays offline, free.">
+<meta name="description" content="Touge drift racing game for Android. Chase a rival down narrow Japanese mountain passes, drift through hairpins and beat five street crews, or run Endless Drift. Simple touch controls, plays offline, free.">
 <link rel="canonical" href="https://mhzgames.com/driftversus/">
 <link rel="icon" type="image/png" href="img/icon-64.png">
 <link rel="apple-touch-icon" href="img/icon-180.png">
@@ -28,12 +28,48 @@
   "url": "https://mhzgames.com/driftversus/",
   "image": "https://mhzgames.com/driftversus/img/icon-512.png",
   "description": "High-speed touge drift racing on your phone with simple touch controls. Chase a rival down a narrow Japanese mountain pass and catch them before the finish.",
-  "genre": "Racing",
+  "genre": ["Racing", "Drift racing", "Arcade"],
   "gamePlatform": "Android",
   "operatingSystem": "Android 8.0+",
   "applicationCategory": "GameApplication",
+  "applicationSubCategory": "Racing",
+  "playMode": "SinglePlayer",
+  "numberOfPlayers": { "@type": "QuantitativeValue", "value": 1 },
+  "contentRating": "Everyone",
+  "inLanguage": "en",
+  "installUrl": "https://play.google.com/store/apps/details?id=id.mhz.driftversus",
+  "sameAs": ["https://play.google.com/store/apps/details?id=id.mhz.driftversus"],
   "author": { "@type": "Organization", "name": "MHz Games", "url": "https://mhzgames.com/" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<!-- Mirrors the visible Questions section word for word: search and the
+     store's AI answers quote this, so the two must never disagree. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is Drift Versus free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Drift Versus is free to play and every car can be earned by driving. It shows ads between races. An optional one-time upgrade removes those forced ads; rewarded ads, which you choose to watch for a bonus, stay. There are also optional currency packs." } },
+    { "@type": "Question", "name": "Does it work offline?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Racing needs no internet connection, no account and no login." } },
+    { "@type": "Question", "name": "Is there multiplayer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Drift Versus is single player: every race is a one-on-one duel against an AI rival, so there is no lobby and no waiting." } },
+    { "@type": "Question", "name": "How do the controls work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tap the left or right side of the screen to steer and hold to drift. A brake button in the middle slows you down, and braking mid-drift tightens the turn. The car accelerates on its own." } },
+    { "@type": "Question", "name": "How long is a race?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About a minute. Each race is a single run down a mountain pass with no laps." } },
+    { "@type": "Question", "name": "What if I keep losing to a rival?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Finishing a race opens the next stage even if you lose, and losses still earn stars. A crew's King opens once you have cleared four of the six stages before them." } },
+    { "@type": "Question", "name": "Can I tune or upgrade my car?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There is no upgrade grind: you unlock a car and drive it as it is." } },
+    { "@type": "Question", "name": "Can I move my progress to a new phone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Your progress is saved only on your device, and the game has no accounts, so it cannot be transferred. Remove Ads can be restored on any device signed in to the same store account." } },
+    { "@type": "Question", "name": "Is Drift Versus on iPhone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not yet. It is out on Android now and coming soon to the App Store." } }
+  ]
 }
 </script>
 
@@ -101,7 +137,7 @@
       <div class="shots" role="list">
         <img role="listitem" src="img/shot-race.webp" width="720" height="1280" loading="lazy" alt="Drifting a yellow car past a rival on a mountain corner, drift score +320">
         <img role="listitem" src="img/shot-mountain.webp" width="720" height="1280" loading="lazy" alt="Two cars chasing down a winding mountain road at night">
-        <img role="listitem" src="img/shot-legends.webp" width="720" height="1280" loading="lazy" alt="The career ladder with rival portraits and a Legend at stage 21">
+        <img role="listitem" src="img/shot-legends.webp" width="720" height="1280" loading="lazy" alt="The career ladder with rival portraits and a Legend">
         <img role="listitem" src="img/shot-garage.webp" width="720" height="1280" loading="lazy" alt="The garage showing the orange Raito Apex-14V">
         <img role="listitem" src="img/shot-home.webp" width="720" height="1280" loading="lazy" alt="The home screen with the Drift Versus logo and a yellow car">
       </div>
@@ -139,12 +175,20 @@
           <p>Drifting isn’t just for style. It’s the only way to carry your speed through sharp hairpins. Nail the drift angle and you’ll exit the corner faster than gripping around it. Touch a wall, though, and the drift points you were building are gone.</p>
         </section>
         <section class="card feature">
-          <h3>Rise Through the Legends</h3>
-          <p>Take on 24 rivals from four crews across 16 mountain passes. Beat each Legend of the mountain, earn stars and build your garage with 23 unique cars, every one of them unlockable just by driving.</p>
+          <h3>Five Crews, One Mountain</h3>
+          <p>Take on 30 rivals from five street crews across 16 mountain passes. Each crew is a chapter of the career: race its drivers, pass a drift challenge, then face the crew’s King. Finish a race and the next stage opens, even if you lose, so one tough rival never stops your run. Beat all five Kings to reach the finale.</p>
+        </section>
+        <section class="card feature">
+          <h3>Endless Drift</h3>
+          <p>A mountain road that never ends. Every wall you hit damages your car, and every rival you overtake repairs it. See how far you can go before the car gives out. Unlocks once you beat your first King.</p>
         </section>
         <section class="card feature">
           <h3>Solo Drift</h3>
           <p>Want the road to yourself? Run any pass in Solo Drift and go for all three stars with your best drift score.</p>
+        </section>
+        <section class="card feature">
+          <h3>24 Cars, Earned by Driving</h3>
+          <p>Every race earns stars, even the ones you lose, and stars unlock new cars. Beat a King and their car can join your garage. There’s no tuning or upgrade grind: pick a car and drive.</p>
         </section>
         <section class="card feature">
           <h3>Play Offline</h3>
@@ -154,6 +198,32 @@
           <h3>No Paywalls</h3>
           <p>Drift Versus is free to play, and everything can be earned just by driving. There’s an optional upgrade that removes forced ads, plus currency packs, but nothing is locked behind a paywall.</p>
         </section>
+      </div>
+    </section>
+
+    <section class="section inset">
+      <p class="eyebrow">[05] Questions</p>
+      <h2>Quick answers</h2>
+      <!-- Keep in step with the FAQPage block in the head. -->
+      <div class="prose">
+        <h4>Is Drift Versus free?</h4>
+        <p>Yes. Drift Versus is free to play and every car can be earned by driving. It shows ads between races. An optional one-time upgrade removes those forced ads; rewarded ads, which you choose to watch for a bonus, stay. There are also optional currency packs.</p>
+        <h4>Does it work offline?</h4>
+        <p>Yes. Racing needs no internet connection, no account and no login.</p>
+        <h4>Is there multiplayer?</h4>
+        <p>No. Drift Versus is single player: every race is a one-on-one duel against an AI rival, so there is no lobby and no waiting.</p>
+        <h4>How do the controls work?</h4>
+        <p>Tap the left or right side of the screen to steer and hold to drift. A brake button in the middle slows you down, and braking mid-drift tightens the turn. The car accelerates on its own.</p>
+        <h4>How long is a race?</h4>
+        <p>About a minute. Each race is a single run down a mountain pass with no laps.</p>
+        <h4>What if I keep losing to a rival?</h4>
+        <p>Finishing a race opens the next stage even if you lose, and losses still earn stars. A crew’s King opens once you have cleared four of the six stages before them.</p>
+        <h4>Can I tune or upgrade my car?</h4>
+        <p>No. There is no upgrade grind: you unlock a car and drive it as it is.</p>
+        <h4>Can I move my progress to a new phone?</h4>
+        <p>Your progress is saved only on your device, and the game has no accounts, so it cannot be transferred. Remove Ads can be restored on any device signed in to the same store account. More on the <a href="/support/">support page</a>.</p>
+        <h4>Is Drift Versus on iPhone?</h4>
+        <p>Not yet. It is out on Android now and coming soon to the App Store.</p>
       </div>
     </section>
 
